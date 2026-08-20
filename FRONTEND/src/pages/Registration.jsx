@@ -1,11 +1,9 @@
 import axios from 'axios'
-import react from 'react'
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 
 const Registration = () => {
 
-let navigate=useNavigate
+
 
 
   let [createuser, setcreateuser] = useState({
@@ -30,6 +28,7 @@ let navigate=useNavigate
 
     catch (error) {
       console.log("the error is comming from the creation  of users")
+      console.log(error)
     }
 
   }
